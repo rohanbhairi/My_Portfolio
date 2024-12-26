@@ -86,6 +86,31 @@
     color: #fff;
 }
 
+.menuClick{
+    background-color: rgb(94, 94, 119);
+    height: 700px;
+    width: 100%;
+    position: fixed;
+    top: 70px;
+    z-index: 111;
+    display: none;
+}
+.menuClick ul li a{
+    color: white;
+    font-size: 21px;
+    font-weight: 600;
+    list-style: none;
+    text-decoration: none;
+}
+.menuClick ul li{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 70px;
+}
+.btnPressed{
+    display: block;
+}
+
 
 /* home css */
 
@@ -432,8 +457,23 @@ footer a:hover {
         display: block;
 
     }
+    .sub-navbar{
+        
+    }
     .sub-navbar ul li{
         display: none;
+         /* display: flex;
+         flex-direction: column;
+        flex-direction: column;
+        border: 1px solid white;
+        height: 800px;
+        position: relative;
+        top: 0;
+        margin-top: 500px;
+        width: 150%; */
+    }
+    .sub-navbar ul li{
+        border: 1px solid white;
     }
     .mainText a{
         /* padding-left: 50px; */

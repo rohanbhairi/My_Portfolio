@@ -26,8 +26,25 @@ console.log(menuBtn);
 if (menuBtn) {
     menuBtn.addEventListener("click", () => {
         console.log("clicked");
+        let clickedMenu=menuBtn.classList.toggle('clickedMenu')
+        // console.log(menuBtn);
+        if (clickedMenu || !clickedMenu) {
+            let menuClicked = document.getElementsByClassName("menuClick")[0];
+            menuClicked.classList.toggle('btnPressed')
+            console.log(menuClicked);
+
+            let menubtnInside = document.querySelectorAll(".menubtn");
+            menubtnInside.forEach((link) => {
+                link.addEventListener("click", () => {
+                    menuClicked.classList.remove('btnPressed');
+                });
+            });
+        }
+        
     });
 } else {
     console.log("menuBtn not found");
 }
-
+ 
+let menubtn= document.getElementsByClassName("menubtn");
+console.log(menubtn)
